@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Xcini</string>
+    <string name="google_maps_key">AIzaSyBIVDQAu6rGwVtWV0hHowuocRc9XjB504E</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

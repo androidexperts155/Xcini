@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="xcini.rv.com.xcini.Choose">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4">
+
+        <ViewFlipper
+
+            android:id="@+id/viewflipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoStart="true"
+            android:flipInterval="4000">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/img1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/img2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img4" />
+        </ViewFlipper>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_blue"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_gray"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_gray"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@drawable/bg_gray"
+                android:text=" " />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/tv_signup"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:text="Sign Up"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/tv_signin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:text="Sign In"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
